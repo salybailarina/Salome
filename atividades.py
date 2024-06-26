@@ -95,5 +95,26 @@
 
 
 
-valor = float(input("Digite um valor em reais: "))
-print(f"Em dólares o valor é de {round(valor / 5.45,2)}")
+# valor = float(input("Digite um valor em reais: "))
+# print(f"Em dólares o valor é de {round(valor / 5.45,2)}")
+
+
+
+
+
+
+
+
+capital = int(input("Digite o capital inicial: "))
+taxa = int(input("Digite a taxa de de juros anual: "))
+tempoAnos = int(input("Digite o tempo em anos: "))
+juros = capital * taxa * tempoAnos
+print("Os juros são:", juros)
+
+
+
+
+
+
+
+
