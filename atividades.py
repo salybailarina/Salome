@@ -192,10 +192,21 @@ print("O maior número é: ", maiorNum)
 
 
 
+ptos = float(input("Digite quantos ptos no cartão tem: "))
+bonus10 = ptos  / 10
+print(bonus10)
+""" if ptos < 100:
+    print(f"Bônus final do seu ano é: {}") """
 
 
 
 
+while True:
+   codigo = input("por favor, insira o PIN: ")
+   if codigo == "1234":
+    break
+print("Errado!...tente de novo")
+print("Programa encerrado, Obg!")
 
 
 
