@@ -413,7 +413,18 @@ print(f"O bonus é de :{bonus} pontos")
 
 
 # 24
+temperatura = int(input("Digite a temperatura: "))
+chuva = input("Vai chover: ")
 
+if temperatura > 20:
+   print("Roupa leve")
+elif temperatura > 10:
+   print("Se abriga um pouco")
+elif temperatura > 5:
+   print("Se abriga bem")
+
+if chuva.lower() == "não":
+   print("Leva guardachuva")
 
 
 
@@ -440,8 +451,15 @@ else:
 
 
 
-# 26
-mediaNotas
+# # 26
+num1 = float(input("Digite uma nota:"))
+num2 = float(input("Digite mais uma nota:"))
+num3 = float(input("Digite mais uma nota:"))
+num4 = float(input("Digite uma ultima nota:"))
+media = (num1 + num2 + num3 + num4)/4
+print("A media dessas notas é", media)
+
+
 
 
 
@@ -460,14 +478,18 @@ mediaNotas
 
 
 # 27
-gasto = input("Digite seu gasto: ")
+gasto = int(input("Digite seu gasto: "))
+if 0<gasto<50:
+    print("economico")
+elif 99>gasto>50:
+    print("intermediario")
+elif gasto>100:
+    print("clase executiva")  
+else:
+    print("Não gastou")
 
-
-
-
-gastos <50 economico
-     >50 intermediario
-     >100 clase executiva
+     
+      
 
 
 
@@ -493,9 +515,33 @@ else:
 
 
 # 29
-mês
-
-
+numMes = int(input("Digite um número e agora te mostro o mês correspondente: "))
+if numMes == 1:
+    print("Janeiro")
+elif numMes == 2:
+    print("Fevereiro")
+elif numMes == 3:
+    print("Março")
+elif numMes == 4:
+    print("Abril")
+elif numMes == 5:
+    print("Maio")
+elif numMes == 6:
+    print("Junho")
+elif numMes == 7:
+    print("Julho")
+elif numMes == 8:
+    print("Agosto")
+elif numMes == 9:
+    print("Setembro")
+elif numMes == 10:
+    print("Outubro")
+elif numMes == 11:
+    print("Novembro")
+elif numMes == 12:
+    print("Decembro")
+else:
+    print("Mês inválido")
 
 
 
@@ -505,13 +551,32 @@ mês
 
 
 # 30
-maior numero entre dos numeros
+num1 = float(input("Digite um número: "))
+num2 = float(input("Digite mais um número: "))
+if num1 > num2:
+    print(f"{num1} é maior que{num2}")
+elif num2 > num1:
+       print(f"{num2} é maior que{num1}")
+else:
+    print("São iguais")
+
 
 
 
 
 # 31
-dois nomes duas idades y se mostra o nome do mais velho
+nome1 = input("Digite um nome: ")
+idade1 = int(input("Digite uma idade para ele: "))
+nome2 = input("Digite mais um nome: ")
+idade2 = int(input("Digite uma idade para ele: "))
+if idade1>idade2:
+    print(f"{nome1} é mais velho")
+elif idade2>idade1:
+        print(f"{nome2} é mais velho")
+else:
+    print("Tem a mesma idade")
+
+
 
 
 
@@ -522,38 +587,387 @@ dois nomes duas idades y se mostra o nome do mais velho
 
 
 # 32
-
+# nao tem
 
 
 
 
 
 # 33
-idade < 5>0 suspeito q ainda nao sabe escrever
-vc tem tantos tempoAnos
+idade = int(input("Digite sua idade: "))
+if 0 <idade <= 5:
+        print("Suspeito q ainda não sabe escrever")
+elif idade > 5:
+        print(f"Vc tem {idade} anos")
+else:
+    print("Idade inválida")
 
 
 
 
 # 34
-nome = q eles e se nao beleza
-tres irmaos d donal
-dos irmaos d mickey
+nome = input("Digite um nome: ")
+donald1 = "Enrique"
+donald2 = "Eduardo"
+donald3 = "Edgar"
+
+mickey1 = "Alex"
+mickey2 = "Wilson"
+
+if nome == donald1 or nome == donald2 or nome == donald3:
+    print("É irmão d Donald")
+elif nome == mickey1 or nome == mickey2:
+    print("É irmão d Mickey")
+else:
+    print("Beleza")
 
 
 
 
 
-# 35
+# # 35
+pontosCursos = float(input("Digite seus pontos: "))
+ 
+if pontosCursos < 0:
+  print("Inválido")
+ 
+elif pontosCursos > 0 or pontosCursos < 49:
+  print("Falhou")
+ 
+elif pontosCursos > 50 or pontosCursos < 59:
+  print("Sua nota é: 1")
+ 
+elif pontosCursos > 60 or pontosCursos < 69:
+  print("Sua nota é: 2")
+ 
+elif pontosCursos > 70 or pontosCursos < 79:
+  print("Sua nota é: 3")
+ 
+elif pontosCursos > 80 or pontosCursos < 89:
+  print("Sua nota é: 4")
+ 
+elif pontosCursos > 90 or pontosCursos < 99:
+  print("Sua nota é: 5")
+ 
+else:
+  print("Inválido")
 
 
 
 
+# 36
+num = int(input("Digite um número: "))
+
+if num % 3 == 0:
+  print("Fizz")
+
+elif num % 5 == 0:
+  print("Buzz")
+  
+elif num % 3 == 0 and num % 5 == 0:
+  print("FizzBuzz")
+
+
+
+
+
+
+
+
+# 37
+ano = int(input("Digite um ano: "))
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+  print("Ano bissexto")
+else:
+  print("Não é ano bissexto")
+
+
+
+
+
+
+
+
+# 38
+while True:
+   pergunta = input("Quer continuar: ")
+   if pergunta == "não":
+      break
+print("OK")
+      
+
+
+
+
+# 39
+from math import sqrt
+while True:
+   numero = int(input("Escreva um número inteiro: "))
+   if numero < 0:
+      print("Inválido")
+   elif numero > 0:
+      print("sqrt"(numero))  
+   elif numero == 0: 
+      break
+
+
+
+
+# 40
+num = 5
+print("contagem regressiva!")
+while True:
+      print(num)
+      num = num -1
+      if num == 0:
+       break
+print("agora!")
+
+
+
+
+
+
+# 41
+senha = input("pro favor, digite uma senha: ")
+while True:
+     confSenha = input("Digite a senha de novo: ")
+     if confSenha == senha:
+         print("senha acertada!")
+         break
+     else:
+         print("senha errada. Tente d novo")
+
+
+
+
+
+# 42 
+codigo = "1234"
+tentativas = 0
+while True:
+   pin = input("digite seu PIN: ")
+   
+   if pin == codigo:
+      print("PIN correto incerido!")
+      break
+   else:
+    tentativas += 1
+    print("Incorreto...tente novamente")
+
+print(f"Você tentou {tentativas} vzs... ")
+
+
+
+
+
+
+
+# 43
+ano = int(input("Digite um ano: "))
+def bissexto(ano):
+   if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+       return True
+   else:
+       return False
+Xbissexto = ano + 1
+while not bissexto(Xbissexto):
+   Xbissexto += 1
+print(f"O próximo ano bissexto é {Xbissexto}")
+
+
+
+
+
+# 44
+numero = 0
+while numero < 30:
+   print(numero)
+   numero += 2
+print("Execução finalizada")
+
+
+
+
+
+# 45
+print("Está pronto? ")
+num = int(input("Digite um numero: "))
+while True:
+    num = num - 1
+    if num == 0: 
+        break
+    print(num)
+print("agora!")
+
+
+
+
+
+
+# 46
+num = int(input("Digite um numero: "))
+if num > 1:
+   for i in range(1, num)
+     print(i)
+
+
+
+
+# 47
+num = int(input("Digite um numero como limite: "))
+numInicial = 1
+while numInicial <= num:
+   print(numInicial)
+   numInicial *= 2
+
+
+
+
+# 48
+num = int(input("Digite um numero como limite: "))
+base =  int(input("Digite a base q será multiplicada: "))
+numInicial = 1
+while numInicial <= num:
+   print(numInicial)
+   numInicial *= base
+
+
+
+
+
+# 49
+# duplicada com a 47
+
+
+
+
+# 50
+soma = 0
+while soma <=100:
+   num = int(input("Digite um numero: "))
+   soma += num
+print(f"A soma é {soma}")
+
+
+
+
+
+# 51
 import re
+def senha(senha):
+   if len(senha) < 8:
+      return False
+   if not re.search("[A-Z]", senha)
+      return False
+   if not re.search("[a-z]", senha)
+      return False
+   if not re.search("[0-9]", senha)
+      return False
 
-print(re.search("[A-Z]", "Senha"))
-print(re.search("[a-z]", "Senha"))
-print(re.search("[0-9]", "Senha"))
+
+
+
+
+
+
+# 52
+import random
+numeroSecreto = random.randint(1,100)
+while True:
+   tent= int(input("Adivinhe o numero: "))
+   if tent < numeroSecreto:
+      print("O número secreto é maior do que seu numero")
+   elif tent > numeroSecreto:
+      print("O número secreto é menor do que seu numero")
+   else:
+      print("Adivinhou parabens")
+      break
+
+
+
+
+# 53
+saldo = 1000
+def validez(valor, saldo):
+    if valor % 10 != 0:
+       print("O valor deve ser multiplo de 10")
+       return False
+    if valor > saldo:
+       print("O valor não está disponivel")
+       return False
+    return True
+while True:
+    try:
+        Valor = int(input("Digite o valor de saque: R$"))
+        if validez(Valor, saldo):
+         print(f"Saque de R${Valor} realizado com sucesso!")
+         break
+    except ValueError:
+       print("Plis, digite um valor válido")
+
+
+
+
+# 54
+while True:
+   palavra1 = input("Digite a primeira palavra: ")
+   palavra2 = input("Digite a segunda palavra: ")
+   if len(palavra1) == len(palavra2):
+       print("tem a mesma quantidade de letras")
+       break
+   else:
+      print("são diferentes a quantidade de letras das palavras, faz novamente")
+
+
+
+
+
+
+# 55
+palavra = str(input("Digite uma palavra com o numero de caracteres escolhidos: "))
+print("#"* len(palavra))
+
+
+# 56
+string = input("Digite uma string: ")
+while len(string) != 0:
+   tracos = "-" * len(string)
+   print(string)
+   print(tracos)
+   string = input("Digite uma string: ")
+
+
+# 57
+string = input("Digite uma string: ")
+string20 = string.rjust(20, "*")
+print(string20)
+
+
+
+
+# 58
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -582,27 +996,66 @@ print(numeroSecreto)
 
 
 
-numero = int(input("entre com um número: "))
-
-if numero < 0:
-    print("esse número é negativo")
-if numero > 0:
-    print("esse número é positivo")
-if numero == 0:
-    print("O número é 0")
 
 
 
 
 
 
+# import re
+
+# print(re.search("[A-Z]", "Senha"))
+# print(re.search("[a-z]", "Senha"))
+# print(re.search("[0-9]", "Senha"))
 
 
 
 
-numero = int(input("Digite um número inteiro: "))
-if numero == 1984:
-  print("Digitou o número 1984 Orwall")
+# import random
+
+# numeroSecreto = random.randint(1,100)
+
+# print(numeroSecreto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# numero = int(input("entre com um número: "))
+
+# if numero < 0:
+#     print("esse número é negativo")
+# if numero > 0:
+#     print("esse número é positivo")
+# if numero == 0:
+#     print("O número é 0")
+
+
+
+
+
+
+
+
+
+
+# numero = int(input("Digite um número inteiro: "))
+# if numero == 1984:
+#   print("Digitou o número 1984 Orwall")
   
 
 
@@ -657,21 +1110,21 @@ if numero == 1984:
 
 
 
-tentativas = 0
-while True:
-   codigo = input("Por favor, digite seu PIN: ")
-   tentativas += 1
-   if codigo == "1234":
-      sucesso = True
-      break
-   if tentativas == 3:
-       sucesso = False
-       break
-   print("Incorreto...tente novamente")
-if sucesso:
-   print("PIN correto incerido!")
-else:
-   print("muitas tentativas... ")
+# tentativas = 0
+# while True:
+#    codigo = input("Por favor, digite seu PIN: ")
+#    tentativas += 1
+#    if codigo == "1234":
+#       sucesso = True
+#       break
+#    if tentativas == 3:
+#        sucesso = False
+#        break
+#    print("Incorreto...tente novamente")
+# if sucesso:
+#    print("PIN correto incerido!")
+# else:
+#    print("muitas tentativas... ")
 
 
 
