@@ -947,10 +947,12 @@ print(string20)
 
 
 # 58
-
-
-
-
+text1 = input("Digite uma string: ")
+text2 = ""
+Xtext = text2.rjust(30, "*")
+print(Xtext)
+print(text1)
+print(Xtext)
 
 
 
