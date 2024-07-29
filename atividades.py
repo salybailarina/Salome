@@ -1044,20 +1044,20 @@
 
 
 
-# Exercício 4:
-def mesaXadrez(tamanho):
-   x = 0
-   while x < tamanho:
-      y = 0
-      while y < tamanho:
-         if(x + y) % 2 == 0:
-            print('1', end = ' ')
-         else:
-            print('0', end = ' ')
-         y += 1
-      print()
-      x += 1         
-mesaXadrez(9)
+# # Exercício 4:
+# def mesaXadrez(tamanho):
+#    x = 0
+#    while x < tamanho:
+#       y = 0
+#       while y < tamanho:
+#          if(x + y) % 2 == 0:
+#             print('1', end = ' ')
+#          else:
+#             print('0', end = ' ')
+#          y += 1
+#       print()
+#       x += 1         
+# mesaXadrez(9)
 
 
 
@@ -1115,30 +1115,142 @@ cumprimentarVariasVezes("Elsa", 9)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Recebe uma lista como parametro
+showTamanhos = [45, 44, 36, 39, 40]
+def mediana(minhaLista: list):
+   ordenada = sorted(minhaLista)
+   centroLista = len(ordenada) // 2
+   return ordenada[centroLista]
+   
+print("A mediana é", mediana(showTamanhos))
+
+idades =[1, 56, 34, 22, 5, 77, 5]
+print("A mediana das idades é", mediana(idades))
+
+
+
+
+
+
+
+
+# retorna uma lista
+def entradaNumeros():
+   numeros = []
+   while True:
+      entradaUsuario = input("Por favor, digite um número inteiro, deixe em branco para sair: ")
+      if len(entradaUsuario) == 0:
+         break
+      numeros.append(int(entradaUsuario))
+   return numeros
+
+
+
+
+
+
+minhaLista = [3, 2, 4, 5, 2]
+for item in minhaLista:
+   print(item)
+
+
+
+
+
+
+
+for i in range(5):
+    print(i)
+
+
+
+
+for i in range(3, 7):
+   print(i)
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # import random
 
 # numeroSecreto = random.randint(1,100)
 
 # print(numeroSecreto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
