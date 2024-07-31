@@ -1130,6 +1130,33 @@ cumprimentarVariasVezes("Elsa", 9)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Recebe uma lista como parametro
 showTamanhos = [45, 44, 36, 39, 40]
 def mediana(minhaLista: list):
@@ -1172,6 +1199,19 @@ for item in minhaLista:
 
 
 
+minha_lista = "python"
+
+for item in minha_lista:
+   print(f"{item} * ", end = "")
+
+
+
+
+
+
+
+
+
 
 
 for i in range(5):
@@ -1183,7 +1223,61 @@ for i in range(5):
 for i in range(3, 7):
    print(i)
 
-   
+
+
+
+
+
+
+
+for i in range(1, 9, 2):
+    print(i)
+
+
+
+
+for i in range(6, 2, -1):
+   print(i)
+
+
+
+
+
+
+
+
+numeros = list(range(2, 7))
+print(numeros)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# # Atividade 4:
+# for item in listaEstrelas:
+
+# lista =[3, 7, 1, 1, 2]
+# listaEstrelas(lista)
+
+
+
+# # Atividade 5:
+# def lista
+# return sorted
+# print(anagramas("tame", "meta")) # Verdadeiro
+# print(anagramas("tame", "mate")) # Verdadeiro
+# print(anagramas("tame", "team")) # Verdadeiro
+# print(anagramas("tabby", "batty")) # Falso
+# print(anagramas("python", "java")) # Falso
 
 
 
@@ -1200,6 +1294,17 @@ for i in range(3, 7):
 
 
 
+minhaString = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeira"
+print(minhaString.count("ma"))
+
+minha_lista = [1, 2, 3, 1, 4, 5, 1, 6]
+print(minha_lista.count(1))
+
+
+
+minhaString = "Oi"
+novaString = minhaString.replace("Oi", "Olá")
+print(novaString)
 
 
 
@@ -1210,25 +1315,50 @@ for i in range(3, 7):
 
 
 
+# Atividade 9:
+def sem_vogal(text):
+   vogais = ["a", "e", "i", "o", "u"]
+   for i in text:
+      if vogais.count(1) == 0:
+         print(1, end='')
+
+sem_vogal("Lalalala")
 
 
 
 
 
 
+minha_lista = [[1,2,3][4,5,6][7,8,9]]
+print(minha_lista)
+print(minha_lista[1])
+print(minha_lista[1][0])
 
 
 
 
 
+minhaMatriz = [[1,2,3][3,2,1][4,5,6]]
+print(minhaMatriz[0][1])
+minhaMatriz[1][0] = 10 
+print(minhaMatriz)
+
+
+
+
+# Atividade :
+pessoas = [["Betty", 10, 1.37],["Pedro", 7, 1.25]["Emily", 32, 1.35]]
+
+for pessoa in pessoas:
+   nome = pessoas[0]
+   idade = pessoas[1]
+   altura = pessoas[2]
 
 
 
 
 
-
-
-
+# Atividade 10:
 
 
 
