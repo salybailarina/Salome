@@ -1069,27 +1069,27 @@
 
 
 
-# Exercício 5:
-def quadradoString(string, inteiro):
-   x = 0
-   while x < inteiro:
-      y = 0
-      while y < inteiro:
-         if(x + y) % 2 == 0:
-            print('1', end = ' ')
-         else:
-            print('0', end = ' ')
-         y += 1
-      print()
-      x += 1         
-quadradoString()
+# # Exercício 5:
+# def quadradoString(string, inteiro):
+#    x = 0
+#    while x < inteiro:
+#       y = 0
+#       while y < inteiro:
+#          if(x + y) % 2 == 0:
+#             print('1', end = ' ')
+#          else:
+#             print('0', end = ' ')
+#          y += 1
+#       print()
+#       x += 1         
+# quadradoString()
 
 
 
 
 
 
-# Exercício 6:
+# # Exercício 6:
 
 
 
@@ -1099,19 +1099,19 @@ quadradoString()
 
 
 
-# Exemplo:
-def cumprimentar(nome):
-  print("Olá,", nome) 
-def cumprimentarVariasVezes(nome, vezes):
-      while vezes < 0:
-        cumprimentar(nome) 
-        vezes -= 1
-cumprimentarVariasVezes("Elsa", 9)
+# # Exemplo:
+# def cumprimentar(nome):
+#   print("Olá,", nome) 
+# def cumprimentarVariasVezes(nome, vezes):
+#       while vezes < 0:
+#         cumprimentar(nome) 
+#         vezes -= 1
+# cumprimentarVariasVezes("Elsa", 9)
 
 
 
                                
-# Exercício 7:
+# # Exercício 7:
 
 
 
@@ -1157,17 +1157,17 @@ cumprimentarVariasVezes("Elsa", 9)
 
 
 
-# Recebe uma lista como parametro
-showTamanhos = [45, 44, 36, 39, 40]
-def mediana(minhaLista: list):
-   ordenada = sorted(minhaLista)
-   centroLista = len(ordenada) // 2
-   return ordenada[centroLista]
+# # Recebe uma lista como parametro
+# showTamanhos = [45, 44, 36, 39, 40]
+# def mediana(minhaLista: list):
+#    ordenada = sorted(minhaLista)
+#    centroLista = len(ordenada) // 2
+#    return ordenada[centroLista]
    
-print("A mediana é", mediana(showTamanhos))
+# print("A mediana é", mediana(showTamanhos))
 
-idades =[1, 56, 34, 22, 5, 77, 5]
-print("A mediana das idades é", mediana(idades))
+# idades =[1, 56, 34, 22, 5, 77, 5]
+# print("A mediana das idades é", mediana(idades))
 
 
 
@@ -1176,33 +1176,33 @@ print("A mediana das idades é", mediana(idades))
 
 
 
-# retorna uma lista
-def entradaNumeros():
-   numeros = []
-   while True:
-      entradaUsuario = input("Por favor, digite um número inteiro, deixe em branco para sair: ")
-      if len(entradaUsuario) == 0:
-         break
-      numeros.append(int(entradaUsuario))
-   return numeros
+# # retorna uma lista
+# def entradaNumeros():
+#    numeros = []
+#    while True:
+#       entradaUsuario = input("Por favor, digite um número inteiro, deixe em branco para sair: ")
+#       if len(entradaUsuario) == 0:
+#          break
+#       numeros.append(int(entradaUsuario))
+#    return numeros
 
 
 
 
 
 
-minhaLista = [3, 2, 4, 5, 2]
-for item in minhaLista:
-   print(item)
+# minhaLista = [3, 2, 4, 5, 2]
+# for item in minhaLista:
+#    print(item)
 
 
 
 
 
-minha_lista = "python"
+# minha_lista = "python"
 
-for item in minha_lista:
-   print(f"{item} * ", end = "")
+# for item in minha_lista:
+#    print(f"{item} * ", end = "")
 
 
 
@@ -1214,14 +1214,14 @@ for item in minha_lista:
 
 
 
-for i in range(5):
-    print(i)
+# for i in range(5):
+#     print(i)
 
 
 
 
-for i in range(3, 7):
-   print(i)
+# for i in range(3, 7):
+#    print(i)
 
 
 
@@ -1230,14 +1230,14 @@ for i in range(3, 7):
 
 
 
-for i in range(1, 9, 2):
-    print(i)
+# for i in range(1, 9, 2):
+#     print(i)
 
 
 
 
-for i in range(6, 2, -1):
-   print(i)
+# for i in range(6, 2, -1):
+#    print(i)
 
 
 
@@ -1246,14 +1246,19 @@ for i in range(6, 2, -1):
 
 
 
-numeros = list(range(2, 7))
-print(numeros)
+# numeros = list(range(2, 7))
+# print(numeros)
 
 
 
 
 
+# Atividade 4:
+def lista_estrelas(lista):
+    for numero in lista:
+        print('*' * numero)
 
+lista_estrelas([3, 5, 2, 1, 9])
 
 
 
@@ -1262,22 +1267,18 @@ print(numeros)
 
 
 
-# # Atividade 4:
-# for item in listaEstrelas:
 
-# lista =[3, 7, 1, 1, 2]
-# listaEstrelas(lista)
 
 
+# # # Atividade 5:
+# # def lista
+# # return sorted
+# # print(anagramas("tame", "meta")) # Verdadeiro
+# # print(anagramas("tame", "mate")) # Verdadeiro
+# # print(anagramas("tame", "team")) # Verdadeiro
+# # print(anagramas("tabby", "batty")) # Falso
+# # print(anagramas("python", "java")) # Falso
 
-# # Atividade 5:
-# def lista
-# return sorted
-# print(anagramas("tame", "meta")) # Verdadeiro
-# print(anagramas("tame", "mate")) # Verdadeiro
-# print(anagramas("tame", "team")) # Verdadeiro
-# print(anagramas("tabby", "batty")) # Falso
-# print(anagramas("python", "java")) # Falso
 
 
 
@@ -1293,18 +1294,18 @@ print(numeros)
 
 
 
+# minhaString = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeira"
+# print(minhaString.count("ma"))
 
-minhaString = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeira"
-print(minhaString.count("ma"))
+# minha_lista = [1, 2, 3, 1, 4, 5, 1, 6]
+# print(minha_lista.count(1))
 
-minha_lista = [1, 2, 3, 1, 4, 5, 1, 6]
-print(minha_lista.count(1))
 
 
+# minhaString = "Oi"
+# novaString = minhaString.replace("Oi", "Olá")
+# print(novaString)
 
-minhaString = "Oi"
-novaString = minhaString.replace("Oi", "Olá")
-print(novaString)
 
 
 
@@ -1314,52 +1315,61 @@ print(novaString)
 
 
 
+# # Atividade 9:
+# def sem_vogal(text):
+#    vogais = ["a", "e", "i", "o", "u"]
+#    for i in text:
+#       if vogais.count(1) == 0:
+#          print(1, end='')
 
-# Atividade 9:
-def sem_vogal(text):
-   vogais = ["a", "e", "i", "o", "u"]
-   for i in text:
-      if vogais.count(1) == 0:
-         print(1, end='')
+# sem_vogal("Lalalala")
 
-sem_vogal("Lalalala")
 
 
 
 
 
+# minha_lista = [[1,2,3][4,5,6][7,8,9]]
+# print(minha_lista)
+# print(minha_lista[1])
+# print(minha_lista[1][0])
 
-minha_lista = [[1,2,3][4,5,6][7,8,9]]
-print(minha_lista)
-print(minha_lista[1])
-print(minha_lista[1][0])
 
 
 
 
+# minhaMatriz = [[1,2,3][3,2,1][4,5,6]]
+# print(minhaMatriz[0][1])
+# minhaMatriz[1][0] = 10 
+# print(minhaMatriz)
 
-minhaMatriz = [[1,2,3][3,2,1][4,5,6]]
-print(minhaMatriz[0][1])
-minhaMatriz[1][0] = 10 
-print(minhaMatriz)
 
 
 
+# # Atividade :
+# pessoas = [["Betty", 10, 1.37],["Pedro", 7, 1.25]["Emily", 32, 1.35]]
 
-# Atividade :
-pessoas = [["Betty", 10, 1.37],["Pedro", 7, 1.25]["Emily", 32, 1.35]]
+# for pessoa in pessoas:
+#    nome = pessoas[0]
+#    idade = pessoas[1]
+#    altura = pessoas[2]
 
-for pessoa in pessoas:
-   nome = pessoas[0]
-   idade = pessoas[1]
-   altura = pessoas[2]
 
 
 
 
+# # Atividade 10:
+# def jogue_o_jogo(mesa: list, x: int, y: int, caracter: str):
+#    if not (0 <= x <= 2 and 0 <= y <= 2):
+#      if caracter not in ['X', 'O']:
+#       if mesa[x][y] != ' ':
+#        mesa[x][y] = caracter
+# mesa = [['O', 'X', 'O'], ['O', 'O', 'X'],['X', 'X', 'O']]
 
-# Atividade 10:
 
+# jogue_o_jogo(mesa, 1, 1, 'X')
+# for linha in mesa:
+#     print(linha)
 
 
 
@@ -1367,6 +1377,77 @@ for pessoa in pessoas:
 
 
 
+
+meu_dicionario = {}
+meu_dicionario["apina"] = "macaco"
+meu_dicionario["banaani"] = "banana"
+meu_dicionario["cembalo"] = "cravo"
+print(meu_dicionario)
+print(meu_dicionario["apina"])
+palavra = input("Por favor, digite uma palavra: ")
+if palavra in meu_dicionario:
+   print("Tradução: ", meu_dicionario[palavra])
+else:
+   print("Palavra não encontrada") 
+
+
+
+
+resultados = {}
+resultados["Mary"] = 4
+resultados["Alice"] = 5
+resultados["Larry"] = 2
+
+lists = {}
+lists[5] = [1, 2 ,3]
+lists[42] = [5, 4, 5, 4, 5]
+lists[100] = [5, 2 ,3]
+
+
+
+
+
+
+
+
+
+meu_dicionario = {}
+
+meu_dicionario["apina"] = "macaco"
+meu_dicionario["banaani"] = "banana"
+meu_dicionario["cembalo"] = "cravo"
+
+for chave in meu_dicionario:
+    print("chave:", chave)
+    print("valor:", meu_dicionario[chave])
+
+
+
+
+
+
+
+
+
+
+
+lista_palavras = [
+  "banana", "leite", "cerveja", "queijo", "leite azedo", "suco", "linguiça",
+  "tomate", "pepino", "manteiga", "margarina", "queijo", "linguiça",
+  "cerveja", "leite azedo", "leite azedo", "manteiga", "cerveja", "chocolate"
+]
+
+def contagens(minha_lista):
+    palavras = {}
+    for palavra in minha_lista:
+      #   se a palavra ainda não está no dicionário, inicialize o valor como zero
+        if palavra not in palavras:
+            palavras[palavra] = 0
+            # incrementa o valor
+        palavras[palavra] += 1
+        return palavras
+   #  chama a função
+    print(contagens(lista_palavras))    
 
 
 
