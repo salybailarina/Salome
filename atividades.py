@@ -1414,7 +1414,53 @@ mesa = [['O', 'X', 'O'], ['O', 'O', 'X'],['X', 'X', 'O']]
 
 
 # Atividade 11:
- 
+class ListaTelefonica:
+    def inicio(self):
+  
+        self.lista = {}
+
+    def adicionar_contato(self, nome, numero):
+      
+        if nome in self.lista:
+            if numero not in self.lista[nome]:
+                self.lista[nome].append(numero)
+        else:
+            self.lista[nome] = [numero]
+
+    def buscar_contato(self, nome):
+       
+        if nome in self.lista:
+            numeros = self.lista[nome]
+            print(" ".join(numeros))
+        else:
+            print("nenhum número")
+
+    def executar(self):
+       
+        while True:
+            comando = input("comando (1 busca, 2 adiciona, 3 sai): ").strip()
+            
+            if comando == '1':
+                nome = input("nome: ").strip()
+                self.buscar_contato(nome)
+            
+            elif comando == '2':
+                nome = input("nome: ").strip()
+                numero = input("número: ").strip()
+                self.adicionar_contato(nome, numero)
+                print("ok!")
+            
+            elif comando == '3':
+                print("saindo...")
+                break
+            
+            else:
+                print("Comando inválido. Tente novamente.")
+
+if __name__ == "main":
+    lista_telefonica = ListaTelefonica()
+    lista_telefonica.executar()
+
 
 
 
@@ -1498,6 +1544,7 @@ def invert(dicionario: dict) -> dict:
 
 
 
+# Atividade 14:
 
 
 
