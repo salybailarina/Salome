@@ -1251,6 +1251,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 # Atividade 1:
 def media(num1, num2, num3):
  
@@ -1402,10 +1413,95 @@ mesa = [['O', 'X', 'O'], ['O', 'O', 'X'],['X', 'X', 'O']]
 
 
 
-
-
-
 # Atividade 11:
+ 
+
+
+
+
+
+
+
+
+
+
+# Atividade 12:
+class ListaTelefonica:
+    def __init__(self):
+    
+        self.lista = {}
+
+    def adicionar_contato(self, nome, numero):
+
+        if nome in self.lista:
+            if numero not in self.lista[nome]:
+                self.lista[nome].append(numero)
+        else:
+            self.lista[nome] = [numero]
+
+    def buscar_contato(self, nome):
+
+        if nome in self.lista:
+            numeros = self.lista[nome]
+            print(" ".join(numeros))
+        else:
+            print("nenhum número")
+
+    def executar(self):
+    
+        while True:
+            comando = input("comando (1 busca, 2 adiciona, 3 sai): ").strip()
+            
+            if comando == '1':
+                nome = input("nome: ").strip()
+                self.buscar_contato(nome)
+            
+            elif comando == '2':
+                nome = input("nome: ").strip()
+                numero = input("número: ").strip()
+                self.adicionar_contato(nome, numero)
+                print("ok!")
+            
+            elif comando == '3':
+                break
+            
+            else:
+                print("Comando inválido. Tente novamente.")
+
+
+if __name__ == "main":
+    lista_telefonica = ListaTelefonica()
+    lista_telefonica.executar()
+
+
+
+
+# Atividade 13:
+def invert(dicionario: dict) -> dict:
+    dicionario_invertido = {v: k for k, v in dicionario.items()}
+    return dicionario_invertido
+
+original = {'name': 'Alice', 'age': 30}
+invertido = invert(original)
+print(invertido) 
+def invert(dicionario: dict) -> dict:
+
+    dicionario_invertido = {}
+    for k, v in dicionario.items():
+        if v in dicionario_invertido:
+            dicionario_invertido[v].append(k)
+        else:
+            dicionario_invertido[v] = [k]
+    return dicionario_invertido
+
+
+
+
+
+
+
+
+
 
 
 # minhaString = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeira"
