@@ -1251,6 +1251,44 @@
 
 
 
+# Atividade 1:
+def media(num1, num2, num3):
+ 
+   print(f"A média aritmética é {(num1 + num2 + num3) / 3}")
+ 
+
+media(2,3,5)
+  
+
+
+# Atividade 2:
+def range(lista):
+    if not lista:  
+        return 0
+    
+    menor = min(lista)
+    maior = max(lista) 
+    return maior - menor 
+
+
+
+
+
+# Atividade 3:
+def range(lista):
+    if not lista:  
+        return 0
+    
+    menor = min(lista)
+    maior = max(lista) 
+    return maior - menor 
+
+
+
+
+
+
+
 
 
 # Atividade 4:
@@ -1270,14 +1308,18 @@ lista_estrelas([3, 5, 2, 1, 9])
 
 
 
-# # # Atividade 5:
-# # def lista
-# # return sorted
-# # print(anagramas("tame", "meta")) # Verdadeiro
-# # print(anagramas("tame", "mate")) # Verdadeiro
-# # print(anagramas("tame", "team")) # Verdadeiro
-# # print(anagramas("tabby", "batty")) # Falso
-# # print(anagramas("python", "java")) # Falso
+# Atividade 5:
+def anagrams(s1, s2):
+
+    return sorted(s1) == sorted(s2)
+print(anagrams("tame", "meta")) # Verdadeiro
+print(anagrams("tame", "mate")) # Verdadeiro
+print(anagrams("tame", "team")) # Verdadeiro
+print(anagrams("tabby", "batty")) # Falso
+print(anagrams("python", "java")) # Falso
+ 
+
+anagrams("python")
 
 
 
@@ -1285,13 +1327,85 @@ lista_estrelas([3, 5, 2, 1, 9])
 
 
 
+#  Atividade 6:
+def Soma_Positivos(lista):
+ 
+    soma = 0
+    for valor in lista:
+        if valor > 0:
+            soma += valor
+    return soma
+
+lista1 = [1, -2, 3, -4, 5]
+print(Soma_Positivos(lista1)) 
+
+
+
+
+
+# Atividade 7:
+def numeros_pares(lista):
+
+    pares = []
+    for numero in lista:
+        if numero % 2 == 0:
+            pares.append(numero)
+    return pares
+
+lista1 = [1, 2, 3, 4, 5, 6]
+print(numeros_pares(lista1))  
+
+
+
+
+# Atividade 8:
+def lista_soma(lista1, lista2):
+
+    soma_lista = []
+    
+   
+    for i in range(len(lista1)):
+        soma_lista.append(lista1[i] + lista2[i])
+    
+    return soma_lista
+
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+print(lista_soma(lista1, lista2)) 
 
 
 
 
 
 
+# Atividade 9:
+def sem_vogal(text):
+   vogais = ["a", "e", "i", "o", "u"]
+   for i in text:
+      if vogais.count(1) == 0:
+         print(1, end='')
 
+sem_vogal("Lalalala")
+
+
+
+
+
+
+# Atividade 10:
+def jogue_o_jogo(mesa: list, x: int, y: int, caracter: str):
+   if not (0 <= x <= 2 and 0 <= y <= 2):
+     if caracter not in ['X', 'O']:
+      if mesa[x][y] != ' ':
+       mesa[x][y] = caracter
+mesa = [['O', 'X', 'O'], ['O', 'O', 'X'],['X', 'X', 'O']]
+
+
+
+
+
+
+# Atividade 11:
 
 
 # minhaString = "Quantas madeiras um esquilo poderia empilhar se um esquilo pudesse empilhar madeira"
@@ -1305,24 +1419,6 @@ lista_estrelas([3, 5, 2, 1, 9])
 # minhaString = "Oi"
 # novaString = minhaString.replace("Oi", "Olá")
 # print(novaString)
-
-
-
-
-
-
-
-
-
-
-# # Atividade 9:
-# def sem_vogal(text):
-#    vogais = ["a", "e", "i", "o", "u"]
-#    for i in text:
-#       if vogais.count(1) == 0:
-#          print(1, end='')
-
-# sem_vogal("Lalalala")
 
 
 
@@ -1356,15 +1452,6 @@ lista_estrelas([3, 5, 2, 1, 9])
 
 
 
-
-
-# # Atividade 10:
-# def jogue_o_jogo(mesa: list, x: int, y: int, caracter: str):
-#    if not (0 <= x <= 2 and 0 <= y <= 2):
-#      if caracter not in ['X', 'O']:
-#       if mesa[x][y] != ' ':
-#        mesa[x][y] = caracter
-# mesa = [['O', 'X', 'O'], ['O', 'O', 'X'],['X', 'X', 'O']]
 
 
 # jogue_o_jogo(mesa, 1, 1, 'X')
