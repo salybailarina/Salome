@@ -1545,6 +1545,69 @@ def invert(dicionario: dict) -> dict:
 
 
 # Atividade 14:
+def Filme(database: list, nome: str, diretor: str, ano: int, tempo_execucao: int):
+
+    filme = {
+        'nome': nome,
+        'diretor': diretor,
+        'ano': ano,
+        'tempo_execucao': tempo_execucao
+    }
+    database.append(filme)
+
+banco_de_dados = []
+
+Filme(banco_de_dados, "Inception", "Christopher Nolan", 2010, 148)
+Filme(banco_de_dados, "The Matrix", "Wachowskis", 1999, 136)
+
+for filme in banco_de_dados:
+    print(filme)
+
+{'nome': 'Inception', 'diretor': 'Christopher Nolan', 'ano': 2010, 'tempo_execucao': 148}
+{'nome': 'The Matrix', 'diretor': 'Wachowskis', 'ano': 1999, 'tempo_execucao': 136}
+
+
+
+
+
+
+# Atividade 15:
+def encontre_filme(database, busca_termo):
+ 
+    busca_termo = busca_termo.lower()
+  
+    filmes_encontrados = [
+        filme for filme in database 
+        if busca_termo in filme['nome'].lower()
+    ]
+    
+    return filmes_encontrados
+banco_de_dados = [
+    {'nome': 'Anaconda', 'diretor': 'Luis Llosa', 'ano': 1997, 'tempo_execucao': 89},
+    {'nome': 'Anatomia de Grey', 'diretor': 'Shonda Rhimes', 'ano': 2005, 'tempo_execucao': 43},
+    {'nome': 'O Senhor dos Anéis', 'diretor': 'Peter Jackson', 'ano': 2001, 'tempo_execucao': 178},
+    {'nome': 'Matrix', 'diretor': 'Wachowskis', 'ano': 1999, 'tempo_execucao': 136}
+]
+
+resultados = encontre_filme(banco_de_dados, 'ana')
+
+for filme in resultados:
+    print(filme)
+
+{'nome': 'Anaconda', 'diretor': 'Luis Llosa', 'ano': 1997, 'tempo_execucao': 89}
+{'nome': 'Anatomia de Grey', 'diretor': 'Shonda Rhimes', 'ano': 2005, 'tempo_execucao': 43}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
