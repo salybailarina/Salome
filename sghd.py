@@ -1,7 +1,7 @@
 import random
 
 def criar_tabuleiro():
-
+    
     return [[0] * 9 for _ in range(9)]
 
 def imprimir_tabuleiro(tabuleiro):
